@@ -29,7 +29,7 @@ if(isset($_POST["login_btn"])){
         $_SESSION["auth_user"] = $log_user;
 
         // Redirect to index
-        header("Location: index.php");
+        header("Location: ../index.php");
     } else {
         array_push($error_array, "User does not exist");
     }

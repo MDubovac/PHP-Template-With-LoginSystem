@@ -106,6 +106,6 @@ if(isset($_POST["reg_btn"])){
         $_SESSION["auth_user"] = $user_username;
 
         // Send to index.php
-        header("Location: index.php");
+        header("Location: ../index.php");
     }
 }

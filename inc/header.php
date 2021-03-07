@@ -1,7 +1,7 @@
 <?php 
     session_start();
-    require_once "./core/config.php";
-    require_once "./core/db.php";
+    require_once(dirname(dirname(__FILE__)) . "/core/config.php");
+    require_once(dirname(dirname(__FILE__)) . "/core/db.php");
 ?>
 <!doctype html>
 <html lang="en">
@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">    
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <title><?php echo isset($page_title) ? APP_NAME . " | " . $page_title : APP_NAME; ?></title>
   </head>
@@ -32,20 +32,20 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                        <a class="nav-link active" aria-current="page" href="<?php echo APP_URL; ?>index.php">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="tos.php">Terms Of Service</a>
+                        <a class="nav-link active" aria-current="page" href="<?php echo APP_URL; ?>tos.php">Terms Of Service</a>
                     </li>
                     
                     <?php  
                         if(isset($_SESSION["auth_user"])){
-                           echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="profile.php">Profile</a></li>';
-                           echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="logout.php">Logout</a></li>';
+                           echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="'. APP_URL . 'auth/profile.php">Profile</a></li>';
+                           echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="' . APP_URL . 'auth/logout.php">Logout</a></li>';
                         } else {
-                            echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="register.php">Register</a></li>';
-                            echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="login.php">Login</a></li>';
+                            echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="'. APP_URL . 'auth/register.php">Register</a></li>';
+                            echo '<li class="nav-item"><a class="nav-link active" aria-current="page" href="' . APP_URL . 'auth/login.php">Login</a></li>';
                         }
                     ?>
                 </ul>

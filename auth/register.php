@@ -1,7 +1,7 @@
 <?php 
     $page_title = "Register";
-    require_once "./inc/header.php";
-    require_once "./form-handlers/register-handler.php";
+    require_once "../inc/header.php";
+    require_once "../form-handlers/register-handler.php";
 ?>
 
 <div class="main">
@@ -89,5 +89,5 @@
 </div>
    
 <?php 
-    require_once "./inc/footer.php";
+    require_once "../inc/footer.php";
 ?>

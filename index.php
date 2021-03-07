@@ -5,7 +5,7 @@
     require_once "./form-handlers/login-handler.php";
 ?>
 
-<div id="home" class="pt-5s px-5">
+<div id="home" class="pt-5 px-5">
     <div class="jumbotron">
         <h1 class="display-4">Welcome to the Application</h1>
         <p class="lead">
@@ -16,7 +16,7 @@
             This project is Open-Source, so feel free to tinker with it.
         </p>
         <p class="lead">
-            <a class="btn btn-primary" href="login.php" role="button">Log In</a>
+            <a class="btn btn-primary" href="https://github.com/MDubovac" role="button">Docs</a>
         </p>
     </div>
 </div>
