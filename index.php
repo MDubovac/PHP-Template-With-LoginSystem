@@ -5,7 +5,7 @@
     require_once "./form-handlers/login-handler.php";
 ?>
 
-<div id="home" class="py-3 px-5">
+<div id="home" class="pt-5s px-5">
     <div class="jumbotron">
         <h1 class="display-4">Welcome to the Application</h1>
         <p class="lead">
