@@ -13,12 +13,17 @@
 
             <div class="form-group mb-4 mt-3">
                 <label for="log_user">Username</label>
-                <input type="text" id="log_user" name="log_user" class="form-control" required>
+                <input type="text" id="log_user" name="log_user" class="form-control" required value="<?php
+                    echo isset($_SESSION["log_user"]) ? $_SESSION["log_user"] : "";
+                ?>">
             </div>
 
             <div class="form-group mb-4 mt-3">
                 <label for="log_pass">Password</label>
                 <input type="password" id="log_pass" name="log_pass" class="form-control" required>
+                <div class="error-msg">
+                    <p><?php echo in_array("User does not exist", $error_array) ? "User does not exist" : ""; ?></p>
+                </div>
             </div>
             
             <div class="terms-of-use">

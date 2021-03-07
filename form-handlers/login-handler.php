@@ -1,6 +1,4 @@
 <?php
-
-
 // Data
 $log_user = "";
 $log_pass = "";
@@ -10,6 +8,8 @@ $error_array = [];
 if(isset($_POST["login_btn"])){
     // Get form data
     $log_user = $_POST["log_user"];
+    $_SESSION["log_user"] = $log_user;
+
     $log_pass = $_POST["log_pass"];
 
     // Check if it works 
@@ -22,11 +22,16 @@ if(isset($_POST["login_btn"])){
     }
     
     if(password_verify($log_pass, $hash)){
-        // Set the session
+        // Clear the session
+        $_SESSION["log_user"] = "";
+
+        // Set auth user the session
         $_SESSION["auth_user"] = $log_user;
 
         // Redirect to index
         header("Location: index.php");
+    } else {
+        array_push($error_array, "User does not exist");
     }
 
     
