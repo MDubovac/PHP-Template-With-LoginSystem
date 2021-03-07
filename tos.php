@@ -1,6 +1,6 @@
 <?php 
     $page_title = "Terms Of Service";
-    include "./inc/header.php";
+    require_once "./inc/header.php";
 ?>
 
 <div class="main">
@@ -13,5 +13,5 @@
 </div>
 
 <?php 
-    include "./inc/footer.php";
+    require_once "./inc/footer.php";
 ?>

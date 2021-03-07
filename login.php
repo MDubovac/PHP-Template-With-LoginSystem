@@ -1,7 +1,7 @@
 <?php 
     $page_title = "Login";
-    include "./inc/header.php";
-    include "./form-handlers/login-handler.php";
+    require_once "./inc/header.php";
+    require_once "./form-handlers/login-handler.php";
 ?>
 
 <div class="main">
@@ -39,5 +39,5 @@
 </div>
    
 <?php 
-    include "./inc/footer.php";
+    require_once "./inc/footer.php";
 ?>

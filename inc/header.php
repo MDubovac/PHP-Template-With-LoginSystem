@@ -1,7 +1,7 @@
 <?php 
     session_start();
-    include "./core/config.php";
-    include "./core/db.php";
+    require_once "./core/config.php";
+    require_once "./core/db.php";
 ?>
 <!doctype html>
 <html lang="en">
