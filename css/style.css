@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.footer{
+    box-shadow: 6px 4px 12px 0 rgba(0, 0, 0, 0.9);
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.terms-of-use p{
+    padding: 6px 12px;
+    border-radius: 4px;
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+.error-msg{
+    color: #de0000;
+}
+
