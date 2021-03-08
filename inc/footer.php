@@ -2,7 +2,8 @@
     <div class="footer">
       <div class="container">
       <p>
-          <i class="fa fa-copyright"></i>2020 Mladen Dubovac
+          Made with <i class="fa fa-heart text-danger"></i> by 
+          <a id="cr" href="https://github.com/MDubovac">Mladen Dubovac</a>
       </p>
     </div>
    </div>

@@ -5,6 +5,6 @@
  */
 
 // Website Data
-define("APP_NAME", "PhpApp");
+define("APP_NAME", "Application name here ...");
 define("APP_ROOT", dirname(dirname(__FILE__)));
-define("APP_URL", "http://phpapp.test/");
+define("APP_URL", "Application url here ..");

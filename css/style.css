@@ -30,3 +30,7 @@ body{
     background-color: gainsboro;
     height: 400px;
 }
+
+#cr{
+    text-decoration: none;
+}

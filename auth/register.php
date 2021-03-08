@@ -77,7 +77,7 @@
                 <p>
                     <strong>Already registered? </strong><a href="login.php">Click here to Login</a>
                     <br>
-                    By registering to this website, you agree to the <a href="tos.php">Terms Of Service</a>.
+                    By registering to this website, you agree to the <a href="<?php echo APP_URL ?>tos.php">Terms Of Service</a>.
                     Your personal data will not be exposed, or compromised.
                     Please read the Terms Of Service before you register.
                 </p>

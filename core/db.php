@@ -5,10 +5,10 @@
  */
 
 // Database params
-define("HOST_NAME", "localhost");
-define("USER_NAME", "root");
-define("DB_PASSWORD", "");
-define("DB_NAME", "phpapp"); 
+define("HOST_NAME", "Host name here...");
+define("USER_NAME", "User here ...");
+define("DB_PASSWORD", "Password herre ...");
+define("DB_NAME", "DB Name here .."); 
 
 // Conection
 $conn = mysqli_connect(HOST_NAME, USER_NAME, DB_PASSWORD, DB_NAME);
